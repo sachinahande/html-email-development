@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Responsive Email Footer Component</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    .footer-link {
+      color: #555555 !important;
+      font-size: 14px;
+      line-height: 20px;
+      text-decoration: none;
+    }
+
+    .footer-link:hover {
+      text-decoration: underline !important;
+    }
+
+    .social-link {
+      color: #111111 !important;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .footer-text {
+      color: #777777;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .footer-container {
+        width: 100% !important;
+      }
+
+      .footer-column {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+      }
+
+      .footer-content {
+        padding: 30px 20px !important;
+        text-align: center !important;
+      }
+
+      .footer-nav td {
+        display: block !important;
+        padding: 5px 0 !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <table
+    role="presentation"
+    width="100%"
+    border="0"
+    cellspacing="0"
+    cellpadding="0"
+    bgcolor="#f4f4f4"
+  >
+    <tr>
+      <td align="center" style="padding: 30px 20px;">
+
+        <!-- Footer Container -->
+        <table
+          role="presentation"
+          width="600"
+          class="footer-container"
+          border="0"
+          cellspacing="0"
+          cellpadding="0"
+          bgcolor="#ffffff"
+          style="width: 100%; max-width: 600px;"
+        >
+
+          <!-- Brand -->
+          <tr>
+            <td
+              class="footer-content"
+              align="center"
+              style="
+                padding: 35px 30px 20px;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+            >
+
+              <p
+                style="
+                  margin: 0 0 10px;
+                  color: #111111;
+                  font-size: 20px;
+                  line-height: 28px;
+                  font-weight: 700;
+                "
+              >
+                Sachin Hande
+              </p>
+
+              <p
+                class="footer-text"
+                style="margin: 0;"
+              >
+                Senior Email &amp; Web Developer
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- Navigation -->
+          <tr>
+            <td align="center" style="padding: 10px 20px;">
+
+              <table
+                role="presentation"
+                class="footer-nav"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+              >
+                <tr>
+
+                  <td style="padding: 0 12px;">
+                    <a
+                      href="https://sachinhande.work/"
+                      target="_blank"
+                      class="footer-link"
+                      aria-label="Visit portfolio"
+                    >
+                      Portfolio
+                    </a>
+                  </td>
+
+                  <td style="padding: 0 12px;">
+                    <a
+                      href="https://sachinhande.work/blog.html"
+                      target="_blank"
+                      class="footer-link"
+                      aria-label="Visit email development blog"
+                    >
+                      Blog
+                    </a>
+                  </td>
+
+                  <td style="padding: 0 12px;">
+                    <a
+                      href="https://sachinhande.work/templates_tools.html"
+                      target="_blank"
+                      class="footer-link"
+                      aria-label="View email and web development tools"
+                    >
+                      Tools
+                    </a>
+                  </td>
+
+                  <td style="padding: 0 12px;">
+                    <a
+                      href="https://sachinhande.work/contact.html"
+                      target="_blank"
+                      class="footer-link"
+                      aria-label="Contact Sachin Hande"
+                    >
+                      Contact
+                    </a>
+                  </td>
+
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- Social Links -->
+          <tr>
+            <td align="center" style="padding: 20px 20px 10px;">
+
+              <table
+                role="presentation"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+              >
+                <tr>
+
+                  <td style="padding: 0 10px;">
+                    <a
+                      href="https://www.linkedin.com/in/sachin-h-5a64647/"
+                      target="_blank"
+                      class="social-link"
+                      aria-label="Connect with Sachin Hande on LinkedIn"
+                    >
+                      LinkedIn
+                    </a>
+                  </td>
+
+                  <td style="padding: 0 10px;">
+                    <a
+                      href="https://github.com/sachinhandе"
+                      target="_blank"
+                      class="social-link"
+                      aria-label="View Sachin Hande GitHub profile"
+                    >
+                      GitHub
+                    </a>
+                  </td>
+
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr>
+            <td style="padding: 10px 30px 0;">
+              <div
+                style="
+                  height: 1px;
+                  background-color: #dddddd;
+                  font-size: 1px;
+                  line-height: 1px;
+                "
+              >
+                &nbsp;
+              </div>
+            </td>
+          </tr>
+
+          <!-- Copyright -->
+          <tr>
+            <td
+              class="footer-content"
+              align="center"
+              style="
+                padding: 20px 30px 30px;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+            >
+
+              <p
+                class="footer-text"
+                style="margin: 0 0 8px;"
+              >
+                You are receiving this email because you subscribed
+                to our communications.
+              </p>
+
+              <p
+                class="footer-text"
+                style="margin: 0;"
+              >
+                © 2026 Sachin Hande. All rights reserved.
+              </p>
+
+            </td>
+          </tr>
+
+        </table>
+        <!-- End Footer Container -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
