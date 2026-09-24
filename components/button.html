@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Email Button Component</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    .button-link {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: #111111;
+      color: #ffffff !important;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      mso-padding-alt: 0;
+    }
+
+    .button-link:hover {
+      background-color: #333333 !important;
+    }
+
+    @media screen and (max-width: 600px) {
+      .button-link {
+        display: block !important;
+        width: auto !important;
+        text-align: center !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <table
+    role="presentation"
+    width="100%"
+    border="0"
+    cellspacing="0"
+    cellpadding="0"
+    bgcolor="#f4f4f4"
+  >
+    <tr>
+      <td align="center" style="padding: 40px 20px;">
+
+        <!-- Email Card -->
+        <table
+          role="presentation"
+          width="600"
+          border="0"
+          cellspacing="0"
+          cellpadding="0"
+          style="width: 100%; max-width: 600px; background-color: #ffffff;"
+        >
+          <tr>
+            <td
+              align="center"
+              style="
+                padding: 40px 30px;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+            >
+
+              <h1
+                style="
+                  margin: 0 0 16px;
+                  font-size: 26px;
+                  line-height: 34px;
+                  color: #111111;
+                "
+              >
+                Reusable Email Button
+              </h1>
+
+              <p
+                style="
+                  margin: 0 0 28px;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: #555555;
+                "
+              >
+                A production-ready CTA button component built for
+                cross-client HTML email compatibility.
+              </p>
+
+              <!-- Button -->
+              <table
+                role="presentation"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+              >
+                <tr>
+                  <td align="center">
+
+                    <!--[if mso]>
+                    <v:roundrect
+                      xmlns:v="urn:schemas-microsoft-com:vml"
+                      xmlns:w="urn:schemas-microsoft-com:office:word"
+                      href="https://sachinhande.work/"
+                      style="height:48px;v-text-anchor:middle;width:190px;"
+                      arcsize="13%"
+                      strokecolor="#111111"
+                      fillcolor="#111111"
+                    >
+                      <w:anchorlock/>
+                      <center
+                        style="
+                          color:#ffffff;
+                          font-family:Arial, Helvetica, sans-serif;
+                          font-size:16px;
+                          font-weight:bold;
+                        "
+                      >
+                        Visit Portfolio
+                      </center>
+                    </v:roundrect>
+                    <![endif]-->
+
+                    <!--[if !mso]><!-- -->
+                    <a
+                      href="https://sachinhande.work/"
+                      target="_blank"
+                      class="button-link"
+                      aria-label="Visit Sachin Hande portfolio"
+                    >
+                      Visit Portfolio
+                    </a>
+                    <!--<![endif]-->
+
+                  </td>
+                </tr>
+              </table>
+              <!-- End Button -->
+
+            </td>
+          </tr>
+        </table>
+        <!-- End Email Card -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
