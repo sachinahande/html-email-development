@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Responsive Email Hero Component</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    img {
+      display: block;
+      border: 0;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .hero-container {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .hero-column {
+      width: 50%;
+    }
+
+    .hero-title {
+      margin: 0;
+      font-size: 30px;
+      line-height: 38px;
+      color: #111111;
+      font-weight: 700;
+    }
+
+    .hero-text {
+      margin: 16px 0 0;
+      font-size: 16px;
+      line-height: 24px;
+      color: #555555;
+    }
+
+    .hero-button {
+      display: inline-block;
+      padding: 13px 24px;
+      background-color: #111111;
+      color: #ffffff !important;
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .hero-container {
+        width: 100% !important;
+      }
+
+      .hero-column {
+        display: block !important;
+        width: 100% !important;
+      }
+
+      .hero-content {
+        padding: 30px 24px !important;
+        text-align: center !important;
+      }
+
+      .hero-title {
+        font-size: 26px !important;
+        line-height: 34px !important;
+      }
+
+      .hero-image {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <table
+    role="presentation"
+    width="100%"
+    border="0"
+    cellspacing="0"
+    cellpadding="0"
+    bgcolor="#f4f4f4"
+  >
+    <tr>
+      <td align="center" style="padding: 40px 20px;">
+
+        <!-- Hero Container -->
+        <table
+          role="presentation"
+          class="hero-container"
+          width="600"
+          border="0"
+          cellspacing="0"
+          cellpadding="0"
+          bgcolor="#ffffff"
+        >
+          <tr>
+
+            <!-- Hero Content -->
+            <td
+              class="hero-column hero-content"
+              width="50%"
+              valign="middle"
+              style="
+                width: 50%;
+                padding: 40px 30px;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+            >
+
+              <h1 class="hero-title">
+                Build Better Email Experiences
+              </h1>
+
+              <p class="hero-text">
+                Responsive, accessible and production-ready HTML email
+                development built for modern email clients.
+              </p>
+
+              <table
+                role="presentation"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="margin-top: 24px;"
+              >
+                <tr>
+                  <td align="center">
+
+                    <!--[if mso]>
+                    <v:roundrect
+                      xmlns:v="urn:schemas-microsoft-com:vml"
+                      xmlns:w="urn:schemas-microsoft-com:office:word"
+                      href="https://sachinhande.work/"
+                      style="
+                        height:46px;
+                        v-text-anchor:middle;
+                        width:150px;
+                      "
+                      arcsize="10%"
+                      strokecolor="#111111"
+                      fillcolor="#111111"
+                    >
+                      <w:anchorlock/>
+                      <center
+                        style="
+                          color:#ffffff;
+                          font-family:Arial, Helvetica, sans-serif;
+                          font-size:15px;
+                          font-weight:bold;
+                        "
+                      >
+                        Explore More
+                      </center>
+                    </v:roundrect>
+                    <![endif]-->
+
+                    <!--[if !mso]><!-- -->
+                    <a
+                      href="https://sachinhande.work/"
+                      target="_blank"
+                      class="hero-button"
+                      aria-label="Explore Sachin Hande portfolio"
+                    >
+                      Explore More
+                    </a>
+                    <!--<![endif]-->
+
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+
+            <!-- Hero Image -->
+            <td
+              class="hero-column"
+              width="50%"
+              valign="middle"
+              style="width: 50%;"
+            >
+
+              <img
+                src="https://placehold.co/600x500/111111/ffffff?text=HTML+EMAIL"
+                width="300"
+                alt="Responsive HTML email development example"
+                class="hero-image"
+                style="
+                  display: block;
+                  width: 100%;
+                  max-width: 300px;
+                  height: auto;
+                  border: 0;
+                "
+              >
+
+            </td>
+
+          </tr>
+        </table>
+        <!-- End Hero Container -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
