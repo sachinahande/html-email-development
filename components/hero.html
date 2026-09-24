@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+
   <title>Responsive Email Hero Component</title>
 
   <style>
     body {
       margin: 0;
       padding: 0;
+      width: 100% !important;
       background-color: #f4f4f4;
       font-family: Arial, Helvetica, sans-serif;
     }
 
     table {
+      border-spacing: 0;
       border-collapse: collapse;
     }
 
@@ -25,45 +29,51 @@
       height: auto;
     }
 
-    .hero-container {
-      width: 100%;
+    .container {
+      width: 600px;
       max-width: 600px;
     }
 
     .hero-column {
       width: 50%;
+      vertical-align: middle;
+    }
+
+    .hero-content {
+      padding: 40px;
     }
 
     .hero-title {
-      margin: 0;
+      margin: 0 0 14px;
+      color: #111111;
       font-size: 30px;
       line-height: 38px;
-      color: #111111;
-      font-weight: 700;
     }
 
-    .hero-text {
-      margin: 16px 0 0;
+    .hero-copy {
+      margin: 0 0 24px;
+      color: #444444;
       font-size: 16px;
-      line-height: 24px;
-      color: #555555;
+      line-height: 26px;
     }
 
     .hero-button {
       display: inline-block;
-      padding: 13px 24px;
+      padding: 14px 26px;
       background-color: #111111;
       color: #ffffff !important;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 20px;
-      font-weight: 700;
+      font-weight: bold;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 4px;
     }
 
-    @media screen and (max-width: 600px) {
-      .hero-container {
+    @media screen and (max-width: 620px) {
+
+      .container {
         width: 100% !important;
+        max-width: 100% !important;
       }
 
       .hero-column {
@@ -72,8 +82,7 @@
       }
 
       .hero-content {
-        padding: 30px 24px !important;
-        text-align: center !important;
+        padding: 30px 20px !important;
       }
 
       .hero-title {
@@ -81,16 +90,43 @@
         line-height: 34px !important;
       }
 
+      .hero-copy {
+        font-size: 15px !important;
+        line-height: 24px !important;
+      }
+
+      .hero-button {
+        display: block !important;
+        text-align: center !important;
+      }
+
       .hero-image {
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
       }
+
     }
   </style>
 </head>
 
 <body>
+
+  <!-- Preheader -->
+  <div
+    style="
+      display:none;
+      max-height:0;
+      overflow:hidden;
+      opacity:0;
+      color:transparent;
+      height:0;
+      width:0;
+      mso-hide:all;
+    "
+  >
+    Responsive HTML email hero component example.
+  </div>
 
   <table
     role="presentation"
@@ -101,94 +137,83 @@
     bgcolor="#f4f4f4"
   >
     <tr>
-      <td align="center" style="padding: 40px 20px;">
+      <td align="center">
 
-        <!-- Hero Container -->
+        <!-- Main container -->
         <table
           role="presentation"
-          class="hero-container"
+          class="container"
           width="600"
           border="0"
           cellspacing="0"
           cellpadding="0"
-          bgcolor="#ffffff"
+          style="
+            width:600px;
+            max-width:600px;
+            background-color:#ffffff;
+          "
         >
+
           <tr>
 
             <!-- Hero Content -->
             <td
-              class="hero-column hero-content"
+              class="hero-column"
               width="50%"
               valign="middle"
               style="
-                width: 50%;
-                padding: 40px 30px;
-                font-family: Arial, Helvetica, sans-serif;
+                width:50%;
+                vertical-align:middle;
+                background-color:#ffffff;
               "
             >
-
-              <h1 class="hero-title">
-                Build Better Email Experiences
-              </h1>
-
-              <p class="hero-text">
-                Responsive, accessible and production-ready HTML email
-                development built for modern email clients.
-              </p>
-
               <table
                 role="presentation"
+                width="100%"
                 border="0"
                 cellspacing="0"
                 cellpadding="0"
-                style="margin-top: 24px;"
               >
                 <tr>
-                  <td align="center">
+                  <td class="hero-content">
 
-                    <!--[if mso]>
-                    <v:roundrect
-                      xmlns:v="urn:schemas-microsoft-com:vml"
-                      xmlns:w="urn:schemas-microsoft-com:office:word"
-                      href="https://sachinhande.work/"
+                    <p
                       style="
-                        height:46px;
-                        v-text-anchor:middle;
-                        width:150px;
+                        margin:0 0 10px;
+                        color:#666666;
+                        font-size:13px;
+                        line-height:20px;
+                        font-weight:bold;
+                        text-transform:uppercase;
+                        letter-spacing:1px;
                       "
-                      arcsize="10%"
-                      strokecolor="#111111"
-                      fillcolor="#111111"
                     >
-                      <w:anchorlock/>
-                      <center
-                        style="
-                          color:#ffffff;
-                          font-family:Arial, Helvetica, sans-serif;
-                          font-size:15px;
-                          font-weight:bold;
-                        "
-                      >
-                        Explore More
-                      </center>
-                    </v:roundrect>
-                    <![endif]-->
+                      HTML Email Component
+                    </p>
 
-                    <!--[if !mso]><!-- -->
+                    <h1 class="hero-title">
+                      Build Better Email Experiences
+                    </h1>
+
+                    <p class="hero-copy">
+                      A responsive hero component designed for
+                      modern HTML email development and
+                      cross-client compatibility.
+                    </p>
+
+                    <!-- CTA -->
                     <a
                       href="https://sachinhande.work/"
                       target="_blank"
                       class="hero-button"
-                      aria-label="Explore Sachin Hande portfolio"
+                      aria-label="Visit Sachin Hande portfolio"
                     >
-                      Explore More
+                      Visit Portfolio
                     </a>
-                    <!--<![endif]-->
 
                   </td>
                 </tr>
               </table>
-
             </td>
 
             <!-- Hero Image -->
@@ -196,28 +221,33 @@
               class="hero-column"
               width="50%"
               valign="middle"
-              style="width: 50%;"
+              style="
+                width:50%;
+                vertical-align:middle;
+                background-color:#111111;
+              "
             >
-
               <img
+                class="hero-image"
                 src="https://placehold.co/600x500/111111/ffffff?text=HTML+EMAIL"
                 width="300"
-                alt="Responsive HTML email development example"
-                class="hero-image"
+                alt="HTML email development example"
                 style="
-                  display: block;
-                  width: 100%;
-                  max-width: 300px;
-                  height: auto;
-                  border: 0;
+                  display:block;
+                  width:100%;
+                  max-width:300px;
+                  height:auto;
+                  border:0;
+                  outline:none;
+                  text-decoration:none;
                 "
               >
-
             </td>
 
           </tr>
+
         </table>
-        <!-- End Hero Container -->
+        <!-- End Main container -->
 
       </td>
     </tr>
