@@ -1,0 +1,166 @@
+<!--
+  Responsive Email Header
+  Author: Sachin Hande
+  Portfolio: https://sachinhande.work/
+
+  Purpose:
+  Reusable email-safe header and navigation for HTML emails.
+-->
+
+<style>
+  @media screen and (max-width: 600px) {
+    .header-logo {
+      display: block !important;
+      width: 100% !important;
+      text-align: center !important;
+      padding-bottom: 16px !important;
+    }
+
+    .header-nav {
+      display: block !important;
+      width: 100% !important;
+      text-align: center !important;
+    }
+
+    .header-link {
+      display: inline-block !important;
+      padding: 6px 8px !important;
+    }
+  }
+</style>
+
+<table
+  role="presentation"
+  width="100%"
+  cellpadding="0"
+  cellspacing="0"
+  border="0"
+  style="
+    width:100%;
+    background-color:#111111;
+  "
+>
+  <tr>
+    <td
+      align="center"
+      style="
+        padding:20px;
+      "
+    >
+
+      <table
+        role="presentation"
+        width="600"
+        cellpadding="0"
+        cellspacing="0"
+        border="0"
+        style="
+          width:100%;
+          max-width:600px;
+        "
+      >
+        <tr>
+
+          <!-- Logo / Brand -->
+          <td
+            class="header-logo"
+            width="220"
+            valign="middle"
+            style="
+              padding:0;
+              font-family:Arial, Helvetica, sans-serif;
+              font-size:20px;
+              line-height:28px;
+              font-weight:bold;
+            "
+          >
+            <a
+              href="https://sachinhande.work/"
+              target="_blank"
+              style="
+                color:#ffffff;
+                text-decoration:none;
+              "
+            >
+              Sachin Hande
+            </a>
+          </td>
+
+          <!-- Navigation -->
+          <td
+            class="header-nav"
+            width="380"
+            valign="middle"
+            align="right"
+            style="
+              padding:0;
+              font-family:Arial, Helvetica, sans-serif;
+              font-size:14px;
+              line-height:22px;
+            "
+          >
+
+            <a
+              class="header-link"
+              href="https://sachinhande.work/"
+              target="_blank"
+              style="
+                display:inline-block;
+                padding:4px 8px;
+                color:#ffffff;
+                text-decoration:none;
+              "
+            >
+              Portfolio
+            </a>
+
+            <a
+              class="header-link"
+              href="https://sachinhande.work/blog.html"
+              target="_blank"
+              style="
+                display:inline-block;
+                padding:4px 8px;
+                color:#ffffff;
+                text-decoration:none;
+              "
+            >
+              Blog
+            </a>
+
+            <a
+              class="header-link"
+              href="https://sachinhande.work/templates_tools.html"
+              target="_blank"
+              style="
+                display:inline-block;
+                padding:4px 8px;
+                color:#ffffff;
+                text-decoration:none;
+              "
+            >
+              Tools
+            </a>
+
+            <a
+              class="header-link"
+              href="https://sachinhande.work/#contact"
+              target="_blank"
+              style="
+                display:inline-block;
+                padding:4px 8px;
+                color:#ffffff;
+                text-decoration:none;
+              "
+            >
+              Contact
+            </a>
+
+          </td>
+
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
