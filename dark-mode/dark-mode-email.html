@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+
+  <title>Dark Mode HTML Email</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      background-color: #f4f4f4;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+
+    img {
+      display: block;
+      border: 0;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .container {
+      width: 600px;
+      max-width: 600px;
+      background-color: #ffffff;
+    }
+
+    .content {
+      padding: 45px 40px;
+    }
+
+    .title {
+      margin: 0 0 18px;
+      color: #111111;
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    .copy {
+      margin: 0;
+      color: #444444;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 26px;
+      background-color: #111111;
+      color: #ffffff !important;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .footer {
+      background-color: #f4f4f4;
+      color: #666666;
+    }
+
+    /*
+      Dark mode support for clients that honor
+      prefers-color-scheme.
+    */
+    @media (prefers-color-scheme: dark) {
+
+      body {
+        background-color: #111111 !important;
+      }
+
+      .container {
+        background-color: #1c1c1c !important;
+      }
+
+      .title {
+        color: #ffffff !important;
+      }
+
+      .copy {
+        color: #dddddd !important;
+      }
+
+      .footer {
+        background-color: #111111 !important;
+        color: #aaaaaa !important;
+      }
+
+      .button {
+        background-color: #ffffff !important;
+        color: #111111 !important;
+      }
+
+    }
+
+    @media screen and (max-width: 620px) {
+
+      .container {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .content {
+        padding: 30px 20px !important;
+      }
+
+      .title {
+        font-size: 26px !important;
+        line-height: 34px !important;
+      }
+
+      .copy {
+        font-size: 15px !important;
+        line-height: 24px !important;
+      }
+
+      .button {
+        display: block !important;
+        text-align: center !important;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Preheader -->
+  <div
+    style="
+      display:none;
+      max-height:0;
+      overflow:hidden;
+      opacity:0;
+    "
+  >
+    A portfolio example demonstrating dark mode HTML email techniques.
+  </div>
+
+  <table role="presentation" width="100%">
+    <tr>
+      <td align="center">
+
+        <!-- Main container -->
+        <table
+          role="presentation"
+          class="container"
+          width="600"
+          style="
+            width:600px;
+            max-width:600px;
+            background-color:#ffffff;
+          "
+        >
+
+          <!-- Header -->
+          <tr>
+            <td
+              style="
+                padding:24px 40px;
+                background-color:#111111;
+              "
+            >
+              <p
+                style="
+                  margin:0;
+                  color:#ffffff;
+                  font-size:20px;
+                  font-weight:bold;
+                "
+              >
+                Email Development Lab
+              </p>
+            </td>
+          </tr>
+
+          <!-- Content -->
+          <tr>
+            <td class="content">
+
+              <p
+                style="
+                  margin:0 0 10px;
+                  color:#666666;
+                  font-size:13px;
+                  font-weight:bold;
+                  text-transform:uppercase;
+                  letter-spacing:1px;
+                "
+              >
+                Dark Mode Email
+              </p>
+
+              <h1 class="title">
+                Designed for light and dark environments.
+              </h1>
+
+              <p class="copy">
+                This example demonstrates how an HTML email can
+                adapt its background, text and CTA colors when a
+                recipient uses a dark-mode environment.
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- CTA -->
+          <tr>
+            <td
+              style="
+                padding:0 40px 45px;
+              "
+              class="content"
+            >
+
+              <a
+                href="https://example.com"
+                target="_blank"
+                class="button"
+                aria-label="View the dark mode email example"
+              >
+                View Example
+              </a>
+
+            </td>
+          </tr>
+
+          <!-- Technical notes -->
+          <tr>
+            <td
+              class="footer"
+              style="
+                padding:30px 40px;
+                background-color:#f4f4f4;
+              "
+            >
+
+              <p
+                style="
+                  margin:0 0 10px;
+                  font-size:14px;
+                  font-weight:bold;
+                "
+              >
+                Dark Mode Techniques
+              </p>
+
+              <p
+                style="
+                  margin:0;
+                  font-size:13px;
+                  line-height:20px;
+                "
+              >
+                This example uses prefers-color-scheme to adjust
+                backgrounds, text and CTA colors while keeping the
+                underlying email structure table-based and
+                responsive.
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td
+              style="
+                padding:22px 40px;
+                background-color:#ffffff;
+              "
+            >
+
+              <p
+                style="
+                  margin:0;
+                  color:#777777;
+                  font-size:12px;
+                  line-height:18px;
+                "
+              >
+                Original portfolio example by Sachin Hande.
+              </p>
+
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
