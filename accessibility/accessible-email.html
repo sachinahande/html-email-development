@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+
+  <title>Accessible HTML Email</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      background-color: #f4f4f4;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+
+    img {
+      display: block;
+      border: 0;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: #005fcc;
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 600px;
+      max-width: 600px;
+      background-color: #ffffff;
+    }
+
+    .content {
+      padding: 40px;
+    }
+
+    .title {
+      margin: 0 0 18px;
+      color: #111111;
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    .copy {
+      margin: 0 0 20px;
+      color: #333333;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 26px;
+      background-color: #111111;
+      color: #ffffff !important;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .footer-copy {
+      margin: 0;
+      color: #555555;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    @media screen and (max-width: 620px) {
+      .container {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .content {
+        padding: 30px 20px !important;
+      }
+
+      .title {
+        font-size: 26px !important;
+        line-height: 34px !important;
+      }
+
+      .copy {
+        font-size: 15px !important;
+        line-height: 24px !important;
+      }
+
+      .button {
+        display: block !important;
+        text-align: center !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--
+    Preheader text:
+    Hidden visually but available to email clients that support it.
+  -->
+  <div
+    style="
+      display:none;
+      max-height:0;
+      overflow:hidden;
+      opacity:0;
+    "
+  >
+    An accessible HTML email demonstrating semantic and inclusive email techniques.
+  </div>
+
+  <!--
+    Layout table:
+    role="presentation" prevents screen readers from interpreting
+    the table as data.
+  -->
+  <table
+    role="presentation"
+    width="100%"
+    aria-hidden="true"
+  >
+    <tr>
+      <td align="center">
+
+        <!-- Main email container -->
+        <table
+          role="presentation"
+          class="container"
+          width="600"
+          style="
+            width:600px;
+            max-width:600px;
+            background-color:#ffffff;
+          "
+        >
+
+          <!-- Header -->
+          <tr>
+            <td
+              class="content"
+              style="
+                padding:24px 40px;
+                background-color:#111111;
+              "
+            >
+              <p
+                style="
+                  margin:0;
+                  color:#ffffff;
+                  font-size:20px;
+                  line-height:26px;
+                  font-weight:bold;
+                "
+              >
+                Email Accessibility Lab
+              </p>
+            </td>
+          </tr>
+
+          <!-- Main content -->
+          <tr>
+            <td class="content">
+
+              <p
+                style="
+                  margin:0 0 10px;
+                  color:#555555;
+                  font-size:13px;
+                  line-height:20px;
+                  font-weight:bold;
+                  text-transform:uppercase;
+                  letter-spacing:1px;
+                "
+              >
+                Accessible Email
+              </p>
+
+              <h1 class="title">
+                Email experiences designed for more people.
+              </h1>
+
+              <p class="copy">
+                Accessible email development considers screen readers,
+                keyboard users, color contrast, readable typography,
+                meaningful links and alternative text.
+              </p>
+
+              <!--
+                Decorative image example:
+                alt="" tells assistive technology that the image
+                does not provide additional information.
+              -->
+              <img
+                src="https://via.placeholder.com/520x180"
+                width="520"
+                alt=""
+                style="
+                  width:100%;
+                  max-width:520px;
+                  height:auto;
+                  margin:0 0 24px;
+                "
+              >
+
+              <h2
+                style="
+                  margin:0 0 12px;
+                  color:#111111;
+                  font-size:20px;
+                  line-height:28px;
+                "
+              >
+                Accessibility considerations
+              </h2>
+
+              <p class="copy">
+                Use meaningful content structure, sufficient color
+                contrast, descriptive alternative text for informative
+                images and clear link labels so recipients can understand
+                the message regardless of how they access it.
+              </p>
+
+              <!-- Accessible CTA -->
+              <p style="margin:0;">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  class="button"
+                  aria-label="Read the accessible email development guide"
+                >
+                  Read the Guide
+                </a>
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- Accessibility notes -->
+          <tr>
+            <td
+              class="content"
+              style="
+                padding:30px 40px;
+                background-color:#f4f4f4;
+              "
+            >
+
+              <h2
+                style="
+                  margin:0 0 12px;
+                  color:#111111;
+                  font-size:18px;
+                  line-height:26px;
+                "
+              >
+                Implementation notes
+              </h2>
+
+              <ul
+                style="
+                  margin:0;
+                  padding-left:20px;
+                  color:#333333;
+                  font-size:14px;
+                  line-height:24px;
+                "
+              >
+                <li>Use a valid document language.</li>
+                <li>Keep layout tables presentational.</li>
+                <li>Use meaningful heading hierarchy.</li>
+                <li>Provide appropriate image alternative text.</li>
+                <li>Use descriptive link and CTA labels.</li>
+                <li>Maintain readable text and sufficient contrast.</li>
+              </ul>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td
+              class="content"
+              style="
+                padding:24px 40px;
+                background-color:#ffffff;
+              "
+            >
+
+              <p class="footer-copy">
+                Original portfolio example by Sachin Hande.
+              </p>
+
+              <p
+                class="footer-copy"
+                style="margin-top:6px;"
+              >
+                Built using accessible HTML email development techniques.
+              </p>
+
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
